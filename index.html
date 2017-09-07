@@ -1,32 +1,37 @@
 <!DOCTYPE HTML>
 <html>
    <head>
-       <title>My Recap</title>
+        <title>My Recap</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial scale=1">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		 <link rel="shortcut icon" href="images/favico.png" type="image/png">
-</head>
+		    <link rel="stylesheet" type="text/css" href="css/style.css">
+		    <link rel="shortcut icon" href="images/favico.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/lightview.css"/>
    </head>
+   
    <body>
        <div class="wrapper">
            <header>
                <div class="header_left">
-                   <a href="img/my.jpg" target="_blank"><img src="img/2-2.png" alt="I" ></a>
+                   <a href="img/my-photo-large.jpg" class="lightview">
+                      <img class="my-photo-small" src="img/my-photo-cicle.png" alt="my_photo">
+
+                   </a>
                </div>
                <div class="header_right">
                    <div class="Igor">Igor</div>
                    <div class="Zapl">Zaplavskiy</div>
-                   <div class="dev">HTML/CSS Developer</div>
+                   <div class="dev">Junior Front-End Developer</div>
                </div>
            </header>
            <div class="main_bl">
                <aside>
                     <div class="title">About me</div>
-                    <p>Date of birth 27/05/1986</p>
-                    <p> I have started learning programming since October 2015 on my own. Then I have successfully completed the Brain Academy Certification requirements and been recognized as Associate in Front End.</p>
-                    <p>I want to grow as a Front-end Development professional. Now I am looking for a position of HTML/CSS developer on full time to join the team at office.</p>
-                    <p>I have a small working experience, but I am a fast learner. I’m ready to start right now and master new fields of knowledge.
+                    <p class="my-info">Date of birth 27/05/1986</p>
+                    <p class="my-info"> I have started learning programming since October 2015 on my own. Then I have successfully completed the Brain Academy Certification requirements and been recognized as Associate in Front End.</p>
+                    <p class="my-info">I want to grow as a Front-end Development professional. Now I am looking for a position of HTML/CSS developer on full time to join the team at office.</p>
+                    <p class="my-info">I have a small working experience, but I am a fast learner. I’m ready to start right now and master new fields of knowledge.
                     </p>
                     <div class="line"></div>
                     <div class="title">Personal skills</div>
@@ -75,19 +80,25 @@
                </aside>
                
                <main>
-                   <section><div class="title_bg">Education</div>
+                   <section>
+                       <div class="title_bg">Education</div>
                        <div class="edu">
                           <div class="edu_1">
+                               <article class="year">&#9830 March 2017 – June 2017 <p>Ukrainian IT School</p></article>
+                               <article class="description">JavaScript development</article>
+                           </div>
+                          <div class="edu_2">
                                <article class="year">&#9830 March 2016 – June 2016 <p>BrainAcademy Kharkiv</p></article>
-                               <article class="what">Front-end development</article>
+                               <article class="description">Front-end development</article>
                            </div>
-                           <div class="edu_2">
-                               <article class="year">&#9830 2010-2013 <p>Dnipropetrovsk National University of Internal Affairs</p></article>
-                               <article class="what">Specialist diploma, Jurisprudence</article>
-                           </div>
+                           
                            <div class="edu_3">
+                               <article class="year">&#9830 2010-2013 <p>Dnipropetrovsk National University of Internal Affairs</p></article>
+                               <article class="description">Specialist diploma, Jurisprudence</article>
+                           </div>
+                           <div class="edu_4">
                                <article class="year">&#9830 2005-2009 <p>Zaporizhia State Engineering Academy</p></article>
-                               <article class="what">Master's degree, Metallurgy of ferrous metals</article>
+                               <article class="description">Master's degree, Metallurgy of ferrous metals</article>
                            </div>
                            
                        </div>
@@ -97,16 +108,16 @@
                         <div class="experience">
                            <div class="job_1">
                                <article class="year">&#9830 2016 - present<p>Freelance</p></article>
-                               <article class="what"> HTML/CSS developer
+                               <article class="description"> HTML/CSS developer
                                </article>
-                           </div>
+						   </div>
                            <div class="job_2">
-                               <article class="year">&#9830 2008 - present <p>Private practice</p></article>
-                               <article class="what">Photographer, retoucher</article>
+                               <article class="year">&#9830 2008 - 2016 <p>Private practice</p></article>
+                               <article class="description">Photographer, retoucher</article>
                            </div>
                             <div class="job_3">
                                <article class="year">&#9830 2005 - 2016 <p>Zaporizhstal</p></article>
-                               <article class="what">Steelmaker</article>
+                               <article class="description">Steelmaker</article>
                            </div>
                        </div>
                    </section>
@@ -124,9 +135,20 @@
                                        <progress max="100" value="70"></progress>
                                    </div>
                                </div>
+                               
                                <div>Bootstrap
                                    <div class="progressbar">
                                        <progress max="100" value="55"></progress>
+                                   </div>
+                               </div>
+                               <div>Lightroom
+                                   <div class="progressbar">
+                                       <progress max="100" value="90"></progress>
+                                   </div>
+                               </div>
+                               <div>Gulp
+                                   <div class="progressbar">
+                                       <progress max="100" value="85"></progress>
                                    </div>
                                </div>
                                 <div>Making sprites
@@ -147,12 +169,22 @@
                                </div>
                                <div>Java Script
                                    <div class="progressbar">
-                                       <progress max="100" value="10"></progress>
+                                       <progress max="100" value="40"></progress>
+                                   </div>
+                               </div>
+                               <div>JQuery
+                                   <div class="progressbar">
+                                       <progress max="100" value="50"></progress>
                                    </div>
                                </div>
                                <div>Photoshop
                                    <div class="progressbar">
                                        <progress max="100" value="90"></progress>
+                                   </div>
+                               </div>
+                               <div>NPM
+                                   <div class="progressbar">
+                                       <progress max="100" value="75"></progress>
                                    </div>
                                </div>
                                 <div>PSD to HTML software development
@@ -201,6 +233,20 @@
                </main>
            </div>
         </div>
-       <div class="copy">&copy; I.Zaplavskiy, 2016</div>
+		<div class="copy">&copy; I.Zaplavskiy, 2016</div>
+		
+		<div id="qoo-counter">
+			<a href="http://qoo.by/" title="СЕО оптимизация и продвижение сайтов">
+				<img src="http://qoo.by/counter/standard/004.png" alt="Раскрутка сайтов и продвижение">
+				<div id="qoo-counter-visits"></div>
+				<div id="qoo-counter-views"></div>
+			</a>
+		</div>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="http://qoo.by/counter.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+    <script type="text/javascript" src="/js/spinners.min.js"></script>
+    <script type="text/javascript" src="/js/lightview.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>

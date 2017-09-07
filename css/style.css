@@ -1,9 +1,11 @@
-*{
+/**{
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
     -webkit-transition: all .2s;
     transition: all .2s;
-}
+}*/
 body{
-    font-family: Geneva, Arial, Helvetica, sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     background: black;
     background: url("../img/b2.png") 0px 0px;
 }
@@ -12,7 +14,7 @@ body{
     width: 75%;
     margin: 0 auto;
     background: white;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 p{
     color: black;
@@ -26,6 +28,7 @@ header{
 }
 
 .header_left{
+    position: relative;
     padding: 20px;
     background: #2aa3ae;
     border-radius: 3px;
@@ -34,7 +37,22 @@ header{
             flex: 1;
     text-align: center;
     border: none;
+    overflow: hidden;
 }
+
+
+.header_left a > span {
+    display: none;
+    position: absolute;
+    top: 37%;
+    left: 42%;
+    background: url(../img/ic_zoom.png) no-repeat;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+
 .header_right{
     padding: 1% 0 2% 4%;
     background: #ededed;
@@ -46,18 +64,82 @@ header{
 .Igor{
     padding-top: 2%;
     font-size: 2.5em;
+    text-shadow: 2px 2px 5px;
+    opacity: 1;
+    animation: igor 2s ease-in-out;
+    -webkit-animation: igor 2s ease-in-out;
 }
+
+@keyframes igor {
+    
+    0% {
+        opacity: 0;    
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
 .Zapl{
     padding-top: 2%;
     font-size: 3em;
     text-shadow: 2px 2px 5px;
     color: #2aa3ae; 
+    opacity: 1;
+    animation: Zapl 2s ease-in-out;
+    -webkit-animation: Zapl 2s ease-in-out;
 }
+
+@keyframes Zapl {
+    
+    0% {
+        opacity: 0;    
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
 .dev{
     padding-top: 5%;
     font-size: 1.3em; 
+    opacity: 1;
+    animation: Zapl 3s ease-in-out;
+    -webkit-animation: Zapl 3s ease-in-out;
 }
-.main_bl{
+
+@keyframes Zapl {
+    
+    0% {
+        opacity: 0;    
+    }
+
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.main_bl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -65,7 +147,7 @@ header{
         flex-wrap: wrap;
 }
 
-aside{
+aside {
     color: #2aa3ae;
     padding: 25px 20px;
     text-align: center;
@@ -82,7 +164,13 @@ aside{
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+	position: relative;		
 }
+
+.my-info {
+    line-height: 1.6em;
+}
+
 .line {
     border: 1px dashed #2aa3ae;
     width: 77%;
@@ -116,9 +204,10 @@ aside{
     line-height: 100px;
     text-align: center;
     background: #2aa3ae;
-    position: relative;
-    top: -254px;
-    left: 6px;
+    position: absolute;
+    top: 85%;
+    left: auto;
+	right: auto;
     
 }
 .circle_1{
@@ -250,7 +339,7 @@ main{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-.edu_1,.edu_2,.edu_3{
+.edu_1,.edu_2,.edu_3,.edu_4{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -293,7 +382,7 @@ main{
     color: #2aa3ae;
     padding: 10px 0 0 30px;
 }
-.what{
+.description{
     -webkit-box-flex: 3;
         -ms-flex: 3;
             flex: 3;
@@ -429,14 +518,22 @@ progress::-moz-progress-bar {
     color: white;
 }
 .copy {
+	margin: 0 auto;
+	margin-top: 1%;
     background: #2aa3ae;
     color: white;
     text-align: center;
-/*    padding: 20px;*/
-    width: 78%;
-    margin: 0 auto;
+    width: 79%;
+    
     border-radius: 5px;
 }
+
+#qoo-counter {
+	float: right;
+	margin-right: 11%;
+    margin-top: 1%;
+}
+	
 
 @media only screen and (max-width: 990px){
    .circle{
@@ -557,3 +654,5 @@ progress::-moz-progress-bar {
     opacity: 0.5;
 } 
 }
+
+
