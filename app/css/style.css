@@ -4,6 +4,17 @@
     -webkit-transition: all .2s;
     transition: all .2s;
 }*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+
+
 body{
     font-family: 'Montserrat', sans-serif;
     background: black;
@@ -37,7 +48,7 @@ header{
             flex: 1;
     text-align: center;
     border: none;
-    overflow: hidden;
+    
 }
 
 
@@ -87,8 +98,8 @@ header{
 }
 
 .Zapl{
-    padding-top: 2%;
-    font-size: 3em;
+    padding-top: 4%;
+    font-size: 2.5em;
     text-shadow: 2px 2px 5px;
     color: #2aa3ae; 
     opacity: 1;
@@ -164,7 +175,7 @@ aside {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-	position: relative;		
+	/*position: relative;*/		
 }
 
 .my-info {
@@ -187,128 +198,29 @@ aside {
 }
 
 .interests {
-    margin: 0 auto;
-    height: 215px;
-    
-}
-.circle{
-    width: 100px;
-    height: 100px;
-    display: block;
-    border-radius: 50px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -khtml-border-radius: 50px;
-    font-size: 1em; 
-    color: #fff;
-    line-height: 100px;
-    text-align: center;
-    background: #2aa3ae;
-    position: absolute;
-    top: 85%;
-    left: auto;
-	right: auto;
-    
-}
-.circle_1{
-    width: 85px;
-    height: 85px;
-    display: block;
-    border-radius: 45px;
-    -moz-border-radius: 45px;
-    -webkit-border-radius: 45px;
-    -khtml-border-radius: 45px;
-    font-size: 0.8em; 
-    color: #fff;
-    line-height: 83px;
-    text-align: center;
-    background: #39b2bd;
-    position: relative;
-    top: 0px;
-    left: -26px;
-    opacity: 0.5;
-    -webkit-transform: rotate(-28deg);
-            transform: rotate(-28deg);
-}
-.circle_2{
-   width: 85px;
-    height: 85px;
-    display: block;
-    border-radius: 45px;
-    -moz-border-radius: 45px;
-    -webkit-border-radius: 45px;
-    -khtml-border-radius: 45px;
-    font-size: 0.8em; 
-    color: #fff;
-    line-height: 85px;
-    text-align: center;
-    background: #2aa3ae;
-    position: relative;
-    top: -85px;
-    left: 63px;
-    opacity: 0.5;
-    -webkit-transform: rotate(31deg);
-            transform: rotate(31deg);
-}
-.circle_3{
-    width: 65px;
-    height: 65px;
-    display: block;
-    border-radius: 32px;
-    -moz-border-radius: 32px;
-    -webkit-border-radius: 32px;
-    -khtml-border-radius: 32px;
-    font-size: 0.8em; 
-    color: #fff;
-    line-height: 76px;
-    text-align: center;
-    background: #2aa3ae;
-    position: relative;
-    top: -85px;
-    left: 83px;
-    opacity: 0.5;
-    -webkit-transform: rotate(-43deg);
-            transform: rotate(-43deg);
-}
-.circle_4 {
-    width: 55px;
-    height: 55px;
-    display: block;
-    border-radius: 27px;
-    -moz-border-radius: 27px;
-    -webkit-border-radius: 27px;
-    -khtml-border-radius: 27px;
-    font-size: 0.7em; 
-    color: #fff;
-    line-height: 60px;
-    text-align: center;
-    background: #2aa3ae;
-    position: relative;
-    top: -148px;
-    left: -27px;
-    opacity: 0.5;
-    -webkit-transform: rotate(29deg);
-            transform: rotate(29deg);
+  display: grid;
+  grid-template: repeat (8, 1fr) / 100%;
+  list-style: none;
+  padding-left: 0
 }
 
-.circle_5 {
-     width: 85px;
-     height: 85px;
-     display: block;
-     border-radius: 45px;
-     -moz-border-radius: 45px;
-     -webkit-border-radius: 45px;
-     -khtml-border-radius: 45px;
-     font-size: 0.6em; 
-     color: #fff;
-     line-height: 85px;
-     text-align: center;
-     background: #2aa3ae;
-    position: relative;
-    top: -269px;
-    left: 14px;
-    opacity: 0.5;
-} 
+.interests li {
+  display: grid;
+  grid-template: 1fr / 10% 90%;
+  margin: 3% 0;
+}
+
+.interests li .fa {
+    font-size: 1.5em;
+}
+
+.interests-item {
+  font-size: 0.9em;
+  align-self: center;
+}
+
+
+ 
 
 main{
     -webkit-box-flex: 3;
@@ -327,7 +239,7 @@ main{
         flex-wrap: wrap;
 }
 
-.edu,.courses,.experience{
+.education_wrap,.courses,.experience{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,7 +251,7 @@ main{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-.edu_1,.edu_2,.edu_3,.edu_4{
+.education_item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -355,7 +267,7 @@ main{
     padding: 0.1% 4%;
     color: white;
     border-radius: 3px;
-    text-shadow: 3px 2px 5px;
+    text-shadow: 2px 1px 6px;
     font-size: 1.5em;
     font-style: italic;
     text-align: center;
@@ -363,7 +275,7 @@ main{
 }
 .title{
     color: #2aa3ae;
-    text-shadow: 3px 2px 5px;
+    text-shadow: 2px 1px 6px;
     font-size: 1.5em;
     font-style: italic;
     padding-bottom: 15px;
@@ -382,6 +294,11 @@ main{
     color: #2aa3ae;
     padding: 10px 0 0 30px;
 }
+
+.year > p {
+    line-height: 1.7em;
+}
+
 .description{
     -webkit-box-flex: 3;
         -ms-flex: 3;
@@ -449,6 +366,28 @@ progress::-moz-progress-bar {
     border-radius: 5px;
 }
 
+#counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.counters_item-cicle {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    line-height: 10em;
+    background: #2aa3ae;
+    color: #fff;
+}
+
+.counters_item-title {
+    line-height: 2em;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
 
 .admin_panel{
     position: fixed;
@@ -464,9 +403,9 @@ progress::-moz-progress-bar {
     
 }
 .admin_panel:hover{
-    left: 273px;
-    -webkit-transition: .4s ease-out;
-    transition: .4s ease-out;
+    left: 293px;
+    -webkit-transition: .1s ease-out;
+    transition: .1s ease-out;
     -webkit-transition-delay: 0.3s;
             transition-delay: 0.3s;
 }
@@ -488,13 +427,13 @@ progress::-moz-progress-bar {
     height: 400px;
     position: absolute;
     margin-top: -85px;
-    left: -273px;
+    left: -293px;
     border-radius: 0 7px 7px 0;
     background: #2aa3ae;
-    padding: 10px;
+    padding: 20px;
     
 }
-.ph_num{
+.admin_content-title{
     display: inline-block;
     padding: 3px 8px;
     background: white;
@@ -502,16 +441,25 @@ progress::-moz-progress-bar {
     border-radius: 2px;
     margin-top: 10px;
 }
-.admin_content img{
-   padding-right: 10px; 
+
+.admin_content-item {
+    display: grid;
+    grid-template: 1fr / 15% 85%;
+    align-items: center;
+    justify-items: start;
+    margin: 4% 0;
 }
-.admin_content span{
+
+.admin_content-item .fa {
+    color: #fff;
+    font-size: 1.5em
+}
+
+.admin_content-item span{
     color: white;
     font-style: italic;
-    display: block; 
-    padding-bottom: 5px;
-    line-height: 24px;
-    text-align: left;
+   
+    
 }
 .admin_content a{
     text-decoration: none;
@@ -523,136 +471,23 @@ progress::-moz-progress-bar {
     background: #2aa3ae;
     color: white;
     text-align: center;
-    width: 79%;
-    
+    width: 76%;
     border-radius: 5px;
+    font-size: 1em
 }
 
 #qoo-counter {
-	float: right;
-	margin-right: 11%;
-    margin-top: 1%;
+  float: right;
+  margin-right: 12.5%;
+  margin-top: 1%;
 }
 	
 
-@media only screen and (max-width: 990px){
-   .circle{
-    width: 120px;
-    height: 120px;
-    display: block;
-    border-radius: 60px;
-    -moz-border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -khtml-border-radius: 60px;
-    font-size: 1em; 
-    color: #fff;
-    line-height: 120px;
-    text-align: center;
-    background: #2aa3ae;
-    position: relative;
-    top: -254px;
-    left: -1px;
-    
-}
-.circle_1{
-    width: 85px;
-    height: 85px;
-    display: block;
-    border-radius: 45px;
-    -moz-border-radius: 45px;
-    -webkit-border-radius: 45px;
-    -khtml-border-radius: 45px;
-    font-size: 0.8em; 
-    color: #fff;
-    line-height: 83px;
-    text-align: center;
-    background: #39b2bd;
-    position: relative;
-    top: 0px;
-    left: -26px;
-    opacity: 0.5;
-    -webkit-transform: rotate(-28deg);
-            transform: rotate(-28deg);
-}
-.circle_2{
-   width: 85px;
-    height: 85px;
-    display: block;
-    border-radius: 45px;
-    -moz-border-radius: 45px;
-    -webkit-border-radius: 45px;
-    -khtml-border-radius: 45px;
-    font-size: 0.8em; 
-    color: #fff;
-    line-height: 85px;
-    text-align: center;
-    background: #2aa3ae;
-    position: relative;
-    top: -85px;
-    left: 63px;
-    opacity: 0.5;
-    -webkit-transform: rotate(31deg);
-            transform: rotate(31deg);
-}
-.circle_3{
-    width: 65px;
-    height: 65px;
-    display: block;
-    border-radius: 32px;
-    -moz-border-radius: 32px;
-    -webkit-border-radius: 32px;
-    -khtml-border-radius: 32px;
-    font-size: 0.8em; 
-    color: #fff;
-    line-height: 76px;
-    text-align: center;
-    background: #2aa3ae;
-    position: relative;
-    top: -73px;
-    left: 83px;
-    opacity: 0.5;
-    -webkit-transform: rotate(-43deg);
-            transform: rotate(-43deg);
-}
-.circle_4 {
-    width: 55px;
-    height: 55px;
-    display: block;
-    border-radius: 27px;
-    -moz-border-radius: 27px;
-    -webkit-border-radius: 27px;
-    -khtml-border-radius: 27px;
-    font-size: 0.7em; 
-    color: #fff;
-    line-height: 60px;
-    text-align: center;
-    background: #2aa3ae;
-    position: relative;
-    top: -130px;
-    left: -27px;
-    opacity: 0.5;
-    -webkit-transform: rotate(29deg);
-            transform: rotate(29deg);
-}
-
-.circle_5 {
-     width: 85px;
-     height: 85px;
-     display: block;
-     border-radius: 45px;
-     -moz-border-radius: 45px;
-     -webkit-border-radius: 45px;
-     -khtml-border-radius: 45px;
-     font-size: 0.6em; 
-     color: #fff;
-     line-height: 85px;
-     text-align: center;
-     background: #2aa3ae;
-    position: relative;
-    top: -269px;
-    left: 14px;
-    opacity: 0.5;
-} 
-}
 
 
+@media only screen and (max-width: 690px){
+
+    .header_right {
+        text-align: center;
+    }
+}

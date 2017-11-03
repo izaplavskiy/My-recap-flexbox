@@ -1,0 +1,5 @@
+# комментарий Ч эта строка игнорируетс€
+# игнорировать все файлы в каталоге node_modules/
+node_modules/
+# игнорировать doc/notes.txt, но не doc/server/arch.txt
+doc/*.txt

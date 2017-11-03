@@ -70,12 +70,12 @@
 }
 
 /* wrapper for the spinner */
-.lv_spinner_wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  cursor: pointer;
-}
+/* .lv_spinner_wrapper { */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* cursor: pointer; */
+/* } */
 
 /* The the previous/next overlay buttons on top of images */
 .lv_inner_previous_next_overlays {
